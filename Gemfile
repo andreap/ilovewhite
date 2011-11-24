@@ -17,6 +17,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'formtastic', '~> 1.2.0'
+gem 'paperclip', "~> 2.3"
+gem 'heroku'
+gem "browser_detect"
 
 # Use unicorn as the web server
 # gem 'unicorn'
