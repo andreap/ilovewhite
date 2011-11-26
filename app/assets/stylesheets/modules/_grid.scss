@@ -1,0 +1,25 @@
+// Insert here grid values.
+// To build a custom grid try to take a look on http://grids.heroku.com/
+
+// Column width
+$colWidth:46px;
+// Number of columns
+$numCols:15;
+// Gutter width
+$margin:10px;
+
+
+.col1 {
+	width:$colWidth;
+}
+
+$i: 2;
+@while $i < $numCols + 1 {
+	.col#{$i} {width:($colWidth * $i) + ($margin * ($i - 1));}
+	$i: $i + 1;
+}
+
+// This creates the class container-full with full width, included externals margin
+.container-full {
+	width:($colWidth+$margin)*$numCols;
+}
