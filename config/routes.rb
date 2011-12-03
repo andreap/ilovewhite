@@ -1,8 +1,11 @@
 Ilovewhite::Application.routes.draw do
-  resources :categories
 
   resources :home
+  resources :projects
+  resources :categories
+
   root :to => 'home#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

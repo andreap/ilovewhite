@@ -19,9 +19,10 @@ end
 
 gem 'jquery-rails'
 gem 'formtastic', '~> 1.2.0'
-gem 'paperclip', "~> 2.3"
+gem "paperclip", "~> 2.4"
 gem 'heroku'
-gem "browser_detect"
+gem 'browser_detect'
+gem 'bluecloth', '>= 2.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'

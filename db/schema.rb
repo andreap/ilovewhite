@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126004923) do
+ActiveRecord::Schema.define(:version => 20111128001347) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -19,5 +19,19 @@ ActiveRecord::Schema.define(:version => 20111126004923) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "category_id"
+    t.string   "mainimg_file_name"
+    t.string   "mainimg_content_type"
+    t.integer  "mainimg_file_size"
+    t.datetime "mainimg_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "projects", ["category_id"], :name => "index_projects_on_category_id"
 
 end

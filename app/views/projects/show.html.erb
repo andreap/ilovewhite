@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1><%= @project.name %></h1>
+
+<%= image_tag @project.mainimg.url %>
+<%= image_tag @project.mainimg.url(:medium) %>
+<%= image_tag @project.mainimg.url(:thumb) %>
+
+<%= raw(markdown(@project.description)) %> <!-- Renderizza il contenuto applicando il markdown -->
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
