@@ -1,0 +1,7 @@
+.container_#{$numCols} {
+	width:100% - $extMarginPercent*2;
+	margin: {
+		left:$extMarginPercent;
+		right:$extMarginPercent;
+	}
+}

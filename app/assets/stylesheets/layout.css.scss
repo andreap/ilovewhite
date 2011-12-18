@@ -1,0 +1,35 @@
+/* CSS GRID FRAMEWORK | Author: AndreaP | Fork project -> github.com/andreap/CSS-Grid-framework
+-------------------------------------------------------------------------------------*/
+
+@import "modules/variables";
+@import "modules/mixins";
+
+/* Main containers
+----------------------------------------------------------------*/
+@import "partials/maincontainers-fixed";
+
+/* Childrens first e last
+----------------------------------------------------------------*/
+@import "partials/firstlast";
+
+/* Grid >> Columns
+----------------------------------------------------------------*/
+@import "partials/cols-fixed";
+
+/* Prefix
+----------------------------------------------------------------*/
+@import "partials/prefix-fixed";
+
+/* Suffix
+----------------------------------------------------------------*/
+@import "partials/suffix-fixed";
+
+@import "partials/pushpull-fixed";
+
+/* Clear rules
+----------------------------------------------------------------*/
+@import "partials/clear-fixed";
+
+/* Layout rules
+----------------------------------------------------------------*/
+@import "partials/layout-rules";

@@ -1,0 +1,35 @@
+/* Push, Pull positioning
+----------------------------------------------------------------*/
+$i: 1;
+@while $i < $numCols {
+	
+	.push_#{$i}, .pull_#{$i} {
+		@include positioning;
+	}
+	
+	$i: $i + 1;
+}
+
+/* Push
+----------------------------------------------------------------*/
+$i: 1;
+@while $i < $numCols {
+
+	.container_#{$numCols} .push_#{$i} {
+		left: (($colWidth * $i) + ($margin * ($i - 1))) + $margin;
+	}
+	
+	$i: $i + 1;
+}
+
+/* Pull
+----------------------------------------------------------------*/
+$i: 1;
+@while $i < $numCols {
+	
+	.container_#{$numCols} .pull_#{$i} {
+		left: -1 * ((($colWidth * $i) + ($margin * ($i - 1))) + $margin);
+	}
+	
+	$i: $i + 1;
+}

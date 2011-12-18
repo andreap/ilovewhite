@@ -1,0 +1,10 @@
+// This function is useful for assign a number of columns directly to an element, not in front-end
+// simply including a "width" statement to an element, with "col-width(numCols)" as value.
+// Example: .menu {width:col-width(5);} --> .menu {width:250px;}
+@function col-width-fixed($numCol) {
+  @return $numCol * $colWidth + ($numCol - 1) * $margin;
+}
+
+@function col-width-liquid($numCol) {
+  @return $numCol * $colWidthPercent - $marginPercent * 2;
+}

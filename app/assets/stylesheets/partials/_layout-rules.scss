@@ -1,0 +1,77 @@
+.no-list-style { /* @ANDREA cercare di creare un mixin delle liste orizzontali e verticali */
+	list-style:none;
+}
+
+.menu-h { /* @ANDREA cercare di creare un mixin delle liste orizzontali e verticali */
+	float:left;
+	display:inline;
+	li {
+		float:left;
+		display:inline;
+	}
+}
+
+.rlt {
+	position:relative;
+}
+.abs {
+	position:absolute;
+}
+
+.centered {
+	margin: {
+		left:auto;
+		right:auto;
+	}
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.first {
+	margin: {
+		left:0 !important;
+	}
+	border-top:none !important;
+	border-left:none !important;
+}
+
+.last {
+	margin: {
+		right:0 !important;
+	}
+	border-bottom:none !important;
+	border-right:none !important;
+}
+
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+
+.breakline {
+	height:3px;
+	background: {
+		image:url(../images/dot.png);
+		position:0 0;
+		repeat:repeat-x;
+	}
+	margin: {
+		bottom:25px;
+		left:auto;
+		right:auto;
+	}
+}
+
+.full {
+	width:100%;
+}

@@ -1,0 +1,21 @@
+// Insert here grid values.
+// To build a custom grid try to take a look on http://grids.heroku.com/
+
+// COLUMN WIDTH
+$colWidth: 40px;
+// NUMBER OF COLUMNS
+$numCols: 15;
+// GUTTER WIDTH
+$margin: 15px;
+
+// Full width
+$fullWidth: ($colWidth+$margin) * $numCols;
+// Container width
+$containerWidth: $fullWidth - $margin;
+
+// COLUMN WIDTH %
+$colWidthPercent: 100% / $numCols;
+// GUTTER WIDTH % -> select between 1%, 2%, 4%, default 1%
+$marginPercent: 1%;
+// EXTERNAL GUTTER -> needed for calculate .container_24 width in liquid layout
+$extMarginPercent: 4%;

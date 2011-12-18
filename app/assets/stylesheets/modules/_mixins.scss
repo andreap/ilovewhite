@@ -1,0 +1,82 @@
+// GRID
+@mixin positioning {
+	position:relative;
+}
+
+// Style common to all columns of the grid
+@mixin colStyle {
+	@include positioning;
+	display:inline;
+	float:left;
+}
+
+// Style specific for fixed layout (margins in pixel)
+@mixin colFixed {
+	margin: {
+		left:$margin;
+		right:$margin;
+	}
+}
+
+// Style specific for fixed layout (margins in %)
+@mixin colLiquid {
+	margin: {
+		left:1%;
+		right:1%;
+	}
+}
+
+
+// UTILS
+@mixin breakLine($width,$file) {
+	height:3px;
+	width:$width;
+	background: {
+		image:url($file);
+		repeat:repeat-x;
+	}
+}
+
+
+// TYPOGRAPHY
+@mixin maiusc {
+	text: {
+		transform:uppercase;
+	}
+}
+
+// Make text aligned to center
+@mixin text-centered {
+	text: {
+		align:center;
+	}
+}
+
+// Make text aligned to left
+@mixin text-lefted {
+	text: {
+		align:left;
+	}
+}
+
+// Make text aligned to right
+@mixin text-righted {
+	text: {
+		align:right;
+	}
+}
+
+// Eliminate decoration from text
+@mixin noDecoration {
+	text: {
+		decoration:none;
+	}
+}
+
+// A style for hgroup titling (h1, h2 etc.)
+@mixin title {
+	font: {
+		family:$museo;
+		weight:normal;
+	}
+}

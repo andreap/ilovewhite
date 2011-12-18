@@ -44,5 +44,8 @@ module Ilovewhite
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # AGGIUNTO IL PERCORSO PER I WEBFONTS ALLA PIPELINE
+    # config.assets.paths << Rails.root.join("app", "assets", "webfonts")
   end
 end

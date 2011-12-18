@@ -1,0 +1,11 @@
+$i: 1;
+@while $i < $numCols {
+	
+	.container_#{$numCols} .suffix_#{$i} {
+		padding: {
+			right:(($colWidth * $i) + ($margin * ($i - 1))) + $margin;
+		}
+	}
+	
+	$i: $i + 1;
+}

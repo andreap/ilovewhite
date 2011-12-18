@@ -1,0 +1,12 @@
+@for $i from 1 through $numCols {
+	
+	.col_#{$i} {
+		@include colStyle;
+		@include colLiquid;
+	}
+	
+	.container_#{$numCols} .col_#{$i} {
+		width: $colWidthPercent*$i - $marginPercent*2;
+	}
+
+}

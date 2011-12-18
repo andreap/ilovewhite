@@ -1,0 +1,15 @@
+body {
+	min-width:$fullWidth;
+}
+
+.container_#{$numCols} {
+	width:$fullWidth;
+	margin: {
+		left:auto;
+		right:auto;
+	}
+}
+
+.container-full {
+	width:$fullWidth;
+}

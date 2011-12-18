@@ -1,0 +1,40 @@
+// MODULES
+@import "modules/colors";
+@import "modules/mixins";
+@import "modules/font-families";
+
+
+body {
+	font: {
+		size:12px;
+		family:$dezen;
+	}
+}
+
+p {
+	font: {
+		size:13px;
+	}
+	line-height:21px;
+}
+
+a {
+	&:link, &:visited {@include noDecoration; color:$red;}
+	&:focus, &:hover {text-decoration:underline;}
+}
+
+h1, h2, h3, h4, h5, h6 {	
+	@include title;
+}
+
+h1 {
+	font: {
+		size:21px;
+	}
+}
+
+h2 {
+	font: {
+		size:18px;
+	}
+}
