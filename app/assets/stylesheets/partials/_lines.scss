@@ -1,0 +1,10 @@
+$i: 1;
+@while $i < $numCols + 1 {
+	
+	.line_#{$i} {
+		@include breakLine(col-width-fixed($i),image-path($lineFile));
+	}
+	
+	$i: $i + 1;
+	
+}

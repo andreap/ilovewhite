@@ -1,25 +1,27 @@
-<h1>Listing projects</h1>
+		<%
+			# PROJECTS INDEX
+		%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+		<h1>Projects</h1>
+		<div class="line_15"></div>
+	
+		<!-- HERE BEGIN THE PROJECTS LOOP-->
+		<% @projects.each do |project| %>
+			<article class="project">
+				<h2><%= link_to project.name, project %></h2>
+			
+				<%= link_to (image_tag project.mainimg.url(:thumb)), project %>
+		
+				<div class="project-meta">
+					<p><span><%= link_to 'Edit', edit_project_path(project) %></span> | <span><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></span></p>
+				</div>
+		
+			</article>
+		<% end %>
+		<!-- END PROJECTS LOOP -->
 
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= raw(markdown(project.description)) %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Project', new_project_path %>
+		<p><%= link_to 'New Project', new_project_path %></p>
+	
+	</div> <!-- END #main-wrapper -->
+	<div class="clear"></div>	
+</div> <!-- END #main -->

@@ -3,7 +3,7 @@
 	@include colFixed;
 }
 
-.container_#{$numCols} .col_1 {
+.container_full .col_1 {
 	width:$colWidth;
 }
 
@@ -15,7 +15,7 @@ $i: 2;
 		@include colFixed;
 	}
 	
-	.container_#{$numCols} .col_#{$i} {
+	.container_full .col_#{$i} {
 		width: ($colWidth * $i) + ($margin * ($i - 1));
 	}
 	

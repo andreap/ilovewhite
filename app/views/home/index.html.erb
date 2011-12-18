@@ -1,29 +1,14 @@
-<div id="top" class="full">
-	top
-</div> <!-- END #top -->
+		<%
+			# HOME INDEX
+		%>
 
-
-<div id="header" class="container_15">
+		<h1>Home</h1>
+		<div class="line_15"></div>
 	
-	<div id="logo" class="col_first col_5">
-		logo
-	</div>
+		<p>Hello, you're in home</p>
+		<p><%= link_to "My projects", projects_path %></p>
+		<p><%= link_to "Categories", categories_path %></p>
 	
-	<div id="navigation" class="col_last col_10">
-		afsdfsd navigation	
-	</div>
-	
-	<div class="clear"></div>
-	
-</div> <!-- END #header -->
-
-<div id="main">
-	<h1>Home</h1>
-	<p>Hello, you're in home</p>
-	<p><%= link_to "My projects", projects_path %></p>
-	<p><%= link_to "Categories", categories_path %></p>
-</div>
-
-<div id="footer" class="full">
-	footer
-</div>
+	</div> <!-- END #main-wrapper -->
+	<div class="clear"></div>	
+</div> <!-- END #main -->

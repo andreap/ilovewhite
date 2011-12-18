@@ -1,17 +1,22 @@
-<div id ="main" class="container-full centered">
-	<div id="main-wrapper" class="">
+		<%
+			# PROJECTS SHOW
+		%>
+		
 		<p id="notice"><%= notice %></p>
 
 		<h1><%= @project.name %></h1>
+		<div class="line_15"></div>
 
-		<%= image_tag @project.mainimg.url %>
-		<%= image_tag @project.mainimg.url(:medium) %>
-		<%= image_tag @project.mainimg.url(:thumb) %>
+		<% #image_tag @project.mainimg.url %>
+
+		<%= link_to (image_tag @project.mainimg.url(:medium)), @project.mainimg.url %>
 
 		<%= raw(markdown(@project.description)) %> <!-- Renderizza il contenuto applicando il markdown -->
 
 
 		<%= link_to 'Edit', edit_project_path(@project) %> |
 		<%= link_to 'Back', projects_path %>
+		
 	</div> <!-- END #main-wrapper -->
+	<div class="clear"></div>	
 </div> <!-- END #main -->

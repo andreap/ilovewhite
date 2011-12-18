@@ -15,7 +15,7 @@ $i: 1;
 $i: 1;
 @while $i < $numCols {
 
-	.container_#{$numCols} .push_#{$i} {
+	.container_full .push_#{$i} {
 		left: (($colWidth * $i) + ($margin * ($i - 1))) + $margin;
 	}
 	
@@ -27,7 +27,7 @@ $i: 1;
 $i: 1;
 @while $i < $numCols {
 	
-	.container_#{$numCols} .pull_#{$i} {
+	.container_full .pull_#{$i} {
 		left: -1 * ((($colWidth * $i) + ($margin * ($i - 1))) + $margin);
 	}
 	
