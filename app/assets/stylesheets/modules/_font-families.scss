@@ -3,22 +3,22 @@
 // MUSEO 700
 @font-face {
 	font-family:'Museo700';
-	src: url(asset-path("museo700.eot", font));
-	src: url(asset-path("museo700.eot#iefix", font))
-		format('embedded-opentype'),url(asset-path("museo700.woff", font))
-		format('woff'),url(asset-path("museo700.ttf", font))
-		format('truetype'),url(asset-path("museo700.svg#Museo700", font))
+	src: font-url('eot/museo700.eot');
+	src: font-url('eot/museo700.eot#iefix')
+		format('embedded-opentype'),font-url('woff/museo700.woff')
+		format('woff'),font-url('ttf/museo700.ttf')
+		format('truetype'),font-url('svg/museo700.svg#Museo700')
 		format('svg');
 }
 
 // DEZEN PRO
 @font-face {
 	font-family:'Dezen';
-	src: url('webfonts/eot/dezen.eot');
-	src: url('webfonts/eot/dezen.eot?#iefix')
-		format('embedded-opentype'),url('webfonts/woff/dezen.woff')
-		format('woff'),url('webfonts/ttf/dezen.ttf')
-		format('truetype'),url('webfonts/svg/dezen.svg#Dezen')
+	src: font-url('eot/dezen.eot');
+	src: font-url('eot/dezen.eot#iefix')
+		format('embedded-opentype'),font-url('woff/dezen.woff')
+		format('woff'),font-url('ttf/dezen.ttf')
+		format('truetype'),font-url('svg/dezen.svg#Dezen')
 		format('svg');
 }
 
