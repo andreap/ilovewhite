@@ -7,6 +7,12 @@
 body {
 	font: {
 		size:12px;
+		family:$defaultSansSerif;
+	}
+}
+
+.fontface body {
+	font: {
 		family:$dezen;
 	}
 }
@@ -18,13 +24,22 @@ p {
 	line-height:21px;
 }
 
-a {
-	&:link, &:visited {@include noDecoration; color:$red;}
-	&:focus, &:hover {text-decoration:underline;}
+h1, h2, h3, h4, h5, h6 {
+	font: {
+		family:$defaultSerif;
+		weight:normal;
+	}
 }
 
-h1, h2, h3, h4, h5, h6 {	
-	@include title;
+.fontface h1,
+.fontface h2,
+.fontface h3,
+.fontface h4,
+.fontface h5,
+.fontface h6 {
+	font: {
+		family:$museo;
+	}
 }
 
 h1 {
@@ -37,4 +52,9 @@ h2 {
 	font: {
 		size:18px;
 	}
+}
+
+a {
+	&:link, &:visited {@include noDecoration; color:$red;}
+	&:focus, &:hover {text-decoration:underline;}
 }

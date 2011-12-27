@@ -13,8 +13,13 @@
 // Style specific for fixed layout (margins in pixel)
 @mixin colFixed {
 	margin: {
-		left:$margin;
-		right:$margin;
+		@if ($margin % 2) == 0 {
+			left:($margin/2);
+			right:($margin/2);
+		} @else {
+			left:floor($margin/2) + 1;
+			right:floor($margin/2);
+		}
 	}
 }
 
@@ -34,6 +39,10 @@
 	background: {
 		image:url($file);
 		repeat:repeat-x;
+	}
+	margin: {
+		top:5px;
+		bottom:15px;
 	}
 }
 
@@ -70,13 +79,5 @@
 @mixin noDecoration {
 	text: {
 		decoration:none;
-	}
-}
-
-// A style for hgroup titling (h1, h2 etc.)
-@mixin title {
-	font: {
-		family:$museo;
-		weight:normal;
 	}
 }

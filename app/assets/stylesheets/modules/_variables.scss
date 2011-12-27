@@ -2,11 +2,11 @@
 // To build a custom grid try to take a look on http://grids.heroku.com/
 
 // COLUMN WIDTH
-$colWidth: 40px;
+$colWidth: 24px;
 // NUMBER OF COLUMNS
 $numCols: 15;
 // GUTTER WIDTH
-$margin: 15px;
+$margin: 40px;
 
 // Full width
 $fullWidth: ($colWidth+$margin) * $numCols;

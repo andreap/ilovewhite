@@ -49,29 +49,6 @@
 	border-right:none !important;
 }
 
-.clear {
-	clear:both;
-	display:block;
-	overflow:hidden;
-	visibility:hidden;
-	width:0;
-	height:0;
-}
-
-.breakline {
-	height:3px;
-	background: {
-		image:url(../images/dot.png);
-		position:0 0;
-		repeat:repeat-x;
-	}
-	margin: {
-		bottom:25px;
-		left:auto;
-		right:auto;
-	}
-}
-
 .full {
 	width:100%;
 }

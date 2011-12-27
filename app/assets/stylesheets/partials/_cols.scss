@@ -7,8 +7,9 @@
 	width:$colWidth;
 }
 
+
 $i: 2;
-@while $i < $numCols + 1 {
+@while $i < $numCols {
 	
 	.col_#{$i} {
 		@include colStyle;
@@ -21,4 +22,14 @@ $i: 2;
 	
 	$i: $i + 1;
 	
+}
+
+
+.col_full {
+	@include colStyle;
+	@include colFixed;
+}
+
+.container_full .col_full {
+	width: ($colWidth * $numCols) + ($margin * ($numCols - 1));
 }
