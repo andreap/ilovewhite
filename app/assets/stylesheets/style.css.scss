@@ -1,8 +1,17 @@
 @import "modules/variables";
 @import "modules/mixins";
 @import "modules/functions";
-@import "modules/files";
 
-/* Break lines
-----------------------------------------------------------------*/
-@import "partials/lines";
+#top {
+	background: {
+		color:#000;
+	}
+	color: #fff;
+}
+
+.section {
+	margin: {
+		top:$margin;
+		bottom:$margin;
+	}
+}

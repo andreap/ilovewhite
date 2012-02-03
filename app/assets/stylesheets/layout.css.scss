@@ -4,6 +4,7 @@
 @import "modules/variables";
 @import "modules/mixins";
 @import "modules/functions";
+@import "modules/files";
 
 /* Main containers
 ----------------------------------------------------------------*/
@@ -34,3 +35,7 @@
 /* Childrens first e last
 ----------------------------------------------------------------*/
 @import "partials/firstlast";
+
+/* Break lines
+----------------------------------------------------------------*/
+@import "partials/lines";

@@ -54,7 +54,7 @@
 
 	<body class="container_full">
 		
-		<div id="top" class="full">
+		<div id="top" class="section">
 			<div id="top-wrapper" class="col_full">
 				top
 			</div>
@@ -62,10 +62,10 @@
 		</div> <!-- END #top -->
 
 
-		<div id="header" class="container_full">
+		<div id="header" class="section">
 			<div id="header-wrapper" class="col_full">
 				<div id="logo" class="col_5 col_first ">
-					logo
+					<%= link_to(image_tag("logo.png", :alt => "ilovewhite", :title => "ilovewhite"), "/") %>
 				</div>
 				<div class="col_10 col_last">
 					sdsd
@@ -74,11 +74,11 @@
 			<div class="clear"></div>
 		</div> <!-- END #header -->
 
-		<div id="main" class="container_full">
+		<div id="main" class="section">
 			<div id="main-wrapper" class="col_full">
 				<%= yield %>
 			
-		<div id="footer" class="full">
+		<div id="footer" class="section">
 			<div id="footer-wrapper" class="col_full">
 				footer
 			</div>
